@@ -1,0 +1,86 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+
+.bitcoin-value-card {
+  margin: 20px;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  &:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.bitcoin-info {
+  display: grid;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo i {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.value {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.additional-info {
+  display: flex;
+  justify-content: space-between;
+  color: #777;
+}
+
+.percentage {
+  background: red;
+  padding: 2px 10px;
+  border-radius: 10px;
+  font-size: 13px;
+  color: #ffffff;
+}
+
+.dropdown-icon {
+  margin: auto;
+}
+
+.down-arrow-section {
+  display: flex;
+  justify-content: space-around;
+  button {
+    padding: 5px 10px;
+    color: #ffffff;
+    border-radius: 10px;
+  }
+
+  .buy {
+    background: green;
+    border: green;
+  }
+
+  .sell {
+    background-color: red;
+    border: red;
+  }
+}
+
+.dropup-icon {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  i {
+    font-size: 18px;
+  }
+}
