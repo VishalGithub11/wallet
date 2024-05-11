@@ -33,8 +33,8 @@ const Wallet = ({ handleDropdownToggle, showDropdown }) => {
             <div className='bottom-section'>
 
           <div className="down-arrow-section">
-            <button className='buy'>Buy</button>
-            <button className='sell'>Sell</button>
+            <button className='buy'>$ Buy</button>
+            <button className='sell'> $ Sell</button>
           </div>
           {showDropdown &&
          <div className="dropup-icon">

@@ -71,13 +71,13 @@ const Timeline = () => {
   const renderHighestValue = () => {
     const data = renderData();
     const highestPrice = Math.max(...data.map(item => item.price));
-    return <span className="highest-value">Highest: ${highestPrice.toFixed(2)}</span>;
+    return <span className="highest-value">Higher: ${highestPrice.toFixed(2)}</span>;
   };
 
   const renderLowestValue = () => {
     const data = renderData();
     const lowestPrice = Math.min(...data.map(item => item.price));
-    return <span className="lowest-value">Lowest: ${lowestPrice.toFixed(2)}</span>;
+    return <span className="lowest-value">Lower: ${lowestPrice.toFixed(2)}</span>;
   };
 
   return (
@@ -89,21 +89,24 @@ const Timeline = () => {
         <p className={selectedInterval === 'Year' ? 'selected' : ''} onClick={() => handleChangeInterval('Year')}>Year</p>
       </div>
       <div className='graph'>
-        <div className="graph-card">
-          <div className="price-info">
-            {renderHighestValue()}
-            {renderLowestValue()}
-          </div>
-          <ResponsiveContainer width="100%" height={80}>
-            <LineChart data={renderData()}>
-              <Line type="monotone" dataKey="price" stroke="#FFD700" strokeWidth={2} />
-            </LineChart>
-          </ResponsiveContainer>
-          <div className="price-info grayFont">
-            1BTC = $5,483
-          </div>
-        </div>
-      </div>
+  <div className="graph-card">
+    <div className="price-info">
+      {renderHighestValue()}
+      {renderLowestValue()}
+    </div>
+    <div className="responsive-chart">
+      <ResponsiveContainer width="100%" height={80}>
+        <LineChart data={renderData()}>
+          <Line type="monotone" dataKey="price" stroke="#FFD700" strokeWidth={2} />
+        </LineChart>
+      </ResponsiveContainer>
+    </div>
+    <div className="price-info grayFont">
+      1BTC = $5,483
+    </div>
+  </div>
+</div>
+
     </div>
   );
 };
