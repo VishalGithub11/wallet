@@ -6,50 +6,52 @@ const Timeline = () => {
   const [selectedInterval, setSelectedInterval] = useState('Week');
 
   const dayData = [
-    { name: '00:00', price: 33000 },
-    { name: '03:00', price: 42000 },
-    { name: '06:00', price: 41000 },
-    { name: '09:00', price: 43000 },
-    { name: '12:00', price: 44000 },
-    { name: '15:00', price: 43000 },
-    { name: '18:00', price: 45000 },
-    { name: '21:00', price: 44500 },
+    { name: '00:00', price: 32000 },
+    { name: '03:00', price: 28000 }, 
+    { name: '06:00', price: 35000 },
+    { name: '09:00', price: 38000 },
+    { name: '12:00', price: 39000 },
+    { name: '15:00', price: 32000 }, 
+    { name: '18:00', price: 37000 },
+    { name: '21:00', price: 31000 }, 
   ];
-
+  
   const weekData = [
-    { name: 'Mon', price: 31000 },
-    { name: 'Tue', price: 42000 },
-    { name: 'Wed', price: 41000 },
-    { name: 'Thu', price: 43000 },
-    { name: 'Fri', price: 44000 },
-    { name: 'Sat', price: 43000 },
-    { name: 'Sun', price: 44000 },
+    { name: 'Mon', price: 32000 },
+    { name: 'Tue', price: 33000 },
+    { name: 'Wed', price: 34000 },
+    { name: 'Thu', price: 27000 }, 
+    { name: 'Fri', price: 38000 },
+    { name: 'Sat', price: 39000 },
+    { name: 'Sun', price: 29000 }, 
   ];
-
+  
   const monthData = [
-    { name: '1', price: 35000 },
-    { name: '5', price: 42000 },
-    { name: '10', price: 41000 },
-    { name: '15', price: 43000 },
-    { name: '20', price: 44000 },
-    { name: '25', price: 43000 },
-    { name: '30', price: 41000 },
+    { name: '1', price: 32000 },
+    { name: '5', price: 31000 }, 
+    { name: '10', price: 33000 },
+    { name: '15', price: 28000 }, 
+    { name: '20', price: 37000 },
+    { name: '25', price: 32000 }, 
+    { name: '30', price: 36000 },
   ];
-
+  
   const yearData = [
-    { name: 'Jan', price: 40000 },
-    { name: 'Feb', price: 42000 },
-    { name: 'Mar', price: 41000 },
-    { name: 'Apr', price: 43000 },
-    { name: 'May', price: 44000 },
-    { name: 'Jun', price: 43000 },
-    { name: 'Jul', price: 45000 },
-    { name: 'Aug', price: 46000 },
-    { name: 'Sep', price: 48000 },
-    { name: 'Oct', price: 47000 },
-    { name: 'Nov', price: 46000 },
-    { name: 'Dec', price: 48000 },
+    { name: 'Jan', price: 32000 },
+    { name: 'Feb', price: 34000 },
+    { name: 'Mar', price: 30000 }, 
+    { name: 'Apr', price: 38000 },
+    { name: 'May', price: 29000 }, 
+    { name: 'Jun', price: 36000 },
+    { name: 'Jul', price: 37000 },
+    { name: 'Aug', price: 28000 }, 
+    { name: 'Sep', price: 40000 },
+    { name: 'Oct', price: 41000 },
+    { name: 'Nov', price: 33000 }, 
+    { name: 'Dec', price: 42000 },
   ];
+  
+  
 
   const handleChangeInterval = (interval) => {
     setSelectedInterval(interval);
